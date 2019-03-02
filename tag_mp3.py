@@ -2,7 +2,7 @@ import os
 from mutagen.easyid3 import EasyID3
 
 
-directory = "/home/alex/Downloads"
+directory = "music/"
 for filename in os.listdir(directory):
     if filename.endswith(".mp3"):
         audio = EasyID3(directory + "/" + filename)
